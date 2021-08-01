@@ -1,0 +1,34 @@
+{
+    "title": "create task",
+    "type": "object",
+    "properties": {
+        "body": {
+            "type": "object",
+            "properties": {
+                "title": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "main_text": {
+                    "type": "string"
+                },
+                "date": {
+                    "type": "string",
+                    "format": "date"
+                },
+                "author_name": {
+                    "type": "string"
+                },
+                "category": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "title"
+            ]
+        }
+    },
+    "required": [
+        "body"
+    ]
+}
